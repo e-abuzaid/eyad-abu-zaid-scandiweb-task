@@ -1,0 +1,119 @@
+.cart-menu__container {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100vw;
+    height: 100%;
+    z-index: 400;
+    overflow: auto;
+}
+
+.cart-menu__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px;
+    position: absolute;
+    width: 325px;
+    max-height: 100%;
+    right: 60px;
+    top: 78px;
+    background-color: #FFFFFF;
+    overflow: auto;    
+}
+
+/* ----------------------------custom scrollbar styles--------------------------- */
+
+.cart-menu__content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart-menu__content::-webkit-scrollbar-button {
+  height: 2px;
+}
+  
+.cart-menu__content::-webkit-scrollbar-track {
+  background: lightgray;
+}
+.cart-menu__content::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color)
+}
+
+/* ----------------------------header styles--------------------------- */
+
+.cart-menu__content h1 span {
+    font-weight: 900;
+}
+
+.cart-menu__content h1 {
+    font-weight: 500;
+    font-size: 16px;
+    align-self: start;
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------empty cart icon style--------------------------- */
+
+.cart-menu__icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    padding: 0;
+}
+
+.cart-menu__icon img {
+    color: #1D1F22;
+    margin-bottom: 1rem;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.cart-menu__icon h2 {
+    font-style: normal;
+    font-family: var(--font-family);
+    margin-bottom: 1rem;
+}
+
+/* ----------------------------cart footer styles--------------------------- */
+
+.cart-menu__total {
+    font-family: var(--font-family);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-menu__total p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1D1F22;
+}
+
+/* ----------------------------cart button styles--------------------------- */
+
+.cart-menu__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.button-secondary a {
+    color: var(--secondary-color);
+}
+
+.button-secondary:hover a {
+    color: white;
+    transition: 0.3s;
+}
+
+.cart-menu__buttons button {
+    width: 47%;
+    font-weight: 600;
+    font-size: 12px;
+}

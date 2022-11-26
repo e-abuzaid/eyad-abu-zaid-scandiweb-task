@@ -1,0 +1,110 @@
+.cartpage-item__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E5E5E5;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.cartpage-item__container:last-of-type {
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.cartpage-item__left {
+    width: 50%;
+}
+
+.cartpage-item__left > h1, .cartpage-item__left > h2, .cartpage-item__left > h3 {
+    margin-bottom: 30px;
+}
+
+.product-attribute-label {
+    margin-bottom: 5px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--secondary-color);
+}
+
+.cartpage-item__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+.cartbage-item__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: absolute;
+    left: -60px;
+}
+
+.cartbage-item__actions button {
+    width: 45px;
+    height: 45px;
+}
+
+.cartbage-item__actions button img {
+    width: 15px;
+}
+
+
+.cartpage-images__container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartpage-images__container > img {
+    width: 200px;
+    margin: 0;
+}
+
+.cartpage-images__actions {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.cartpage-images__actions button {
+    width: 24px;
+    height: 24px;
+    background: rgba(0, 0, 0, 0.73);
+    margin-left: 6px;
+    border: none;
+    cursor: pointer;
+}
+.cartpage-options button {
+    cursor: default;
+}
+
+@media screen and (max-width: 700px) {
+    .cartpage-item__container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .cartpage-item__left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartpage-item__right {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+}

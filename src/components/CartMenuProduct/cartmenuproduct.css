@@ -1,0 +1,116 @@
+.cart-product__container {
+    width: 95%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------rightside styles--------------------------- */
+
+.cart-product__right {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ----------------------------cart buttons styles--------------------------- */
+
+.cart-product__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cart-product__actions button {
+    background-color: white;
+    cursor: pointer;
+}
+
+.button-cart, .button-cart-active {
+    min-width: 24px;
+    height: 24px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 4px 8px 4px 0;
+}
+
+.button-cart {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.button-cart-active {
+    color: #FFFFFF;
+    background-color: var(--secondary-color);
+}
+
+.button-cart-color, .button-cart-color-active {
+    width: 16px;
+    height: 16px;   
+    margin: 4px 8px 4px 0; 
+}
+
+.button-cart-color-active {
+    box-shadow: 
+        0 0 0 1px white,
+        0 0 0 2px var(--primary-color);
+}
+
+.cart-action-icon {
+    width: 8px;
+}
+
+.cart-product__actions p {
+    transform: translateX(7px);
+}
+
+.product-image-container img {
+    width: 100%;
+}
+
+/* ----------------------------left side styles--------------------------- */
+
+.cart-product__left {
+    width: 40%;
+}
+
+/* ----------------------------font styles--------------------------- */
+
+.cart-product__left h2 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;    
+    color: #1D1F22;    
+}
+
+.cart-product__attribute-container h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;        
+    color: var(--secondary-color);
+}
+
+.cart-product__left h4 {
+    margin: 9px 0 13px 0; 
+}
+
+
+.cart-product__attribute-container {
+    margin: 10px 0 10px 0;
+}
+

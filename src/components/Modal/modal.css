@@ -1,0 +1,27 @@
+.modal-container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 50%;
+    padding: 0 20px 40px 20px;
+    animation: animateicon 0.3s linear;
+}
+
+.modal-top {
+    padding: 20px;
+    text-align: end;
+    border-bottom: 1px solid lightgray;
+}
+
+.modal-top strong {
+    cursor: pointer;
+}
+
+.modal-content {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+

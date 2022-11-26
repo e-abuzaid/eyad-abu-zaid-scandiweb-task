@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,body {
+  height:100%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.text-primary {
+  font-family: var(--font-family);
+  font-style: normal;
+  color: var(--secondary-color);;
+}
+
+.button-primary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-family: var(--font-family);
+  padding: 16px 32px;
+  width: 292px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.button-primary:hover {
+  background-color: #7FEF9D;
+  transition: 0.3s;
+}
+
+.button-secondary {
+  font-family: var(--font-family);
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid var(--secondary-color);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-color);
+  transition: 0.3s;
+}
+
+.button-primary:disabled {
+  background-color: gray;
+  cursor: unset;
+}
+
+.option-text, .option-text-cart{
+  width: 63px;
+  height: 45px;
+  border: 1px solid var(--secondary-color);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: white;
+  font-family: var(--font-family);
+}
+
+.option-text-active, .option-text:hover, .option-text-cart-active {
+  background-color: var(--secondary-color);
+  color: white;
+  transition: 0.3s;
+}
+
+
+.option-color, .option-color-cart {
+  width: 32px;
+  height: 32px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.option-color-active, .option-color-cart-active {
+  box-shadow: 
+  0 0 0 1px white,
+  0 0 0 2px var(--primary-color);
+}

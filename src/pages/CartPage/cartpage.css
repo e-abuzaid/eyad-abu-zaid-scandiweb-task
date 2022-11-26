@@ -1,0 +1,29 @@
+.cartpage-items__container {
+    width: 100%;
+}
+
+.cart__heading {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    margin: 3rem;
+}
+
+.cartpage-actions h2 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px; 
+}
+
+.cartpage-actions h2:first-of-type {
+    margin-top: 20px;
+}
+
+.cartpage-actions h2:last-of-type {
+    margin-bottom: 20px;
+}
+
+.cartpage-actions button {
+    height: 43px;
+    width: 279px;
+}
