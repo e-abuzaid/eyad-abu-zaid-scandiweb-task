@@ -18,11 +18,11 @@ export default class CartPage extends Component {
 
   render() {
     return (
-      <div className="categories__container">
-        <h1 className="cart__heading text-primary">
+      <div className="categories-container">
+        <h1 className="cart-heading text-primary">
           CART
         </h1>
-        <div className="cartpage-items__container">
+        <div className="cartpage-items-container">
           {this.props.cart.items.map((product, i) => (
             <CartProduct 
               key={i}

@@ -1,4 +1,4 @@
-.cart-menu__container {
+.cart-menu-container {
     position: fixed;
     top: 0;
     background-color: rgba(0,0,0,0.5);
@@ -8,7 +8,7 @@
     overflow: auto;
 }
 
-.cart-menu__content {
+.cart-menu-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,28 +24,28 @@
 
 /* ----------------------------custom scrollbar styles--------------------------- */
 
-.cart-menu__content::-webkit-scrollbar {
+.cart-menu-content::-webkit-scrollbar {
   width: 5px;
 }
 
-.cart-menu__content::-webkit-scrollbar-button {
+.cart-menu-content::-webkit-scrollbar-button {
   height: 2px;
 }
   
-.cart-menu__content::-webkit-scrollbar-track {
+.cart-menu-content::-webkit-scrollbar-track {
   background: lightgray;
 }
-.cart-menu__content::-webkit-scrollbar-thumb {
+.cart-menu-content::-webkit-scrollbar-thumb {
   background-color: var(--primary-color)
 }
 
 /* ----------------------------header styles--------------------------- */
 
-.cart-menu__content h1 span {
+.cart-menu-content h1 span {
     font-weight: 900;
 }
 
-.cart-menu__content h1 {
+.cart-menu-content h1 {
     font-weight: 500;
     font-size: 16px;
     align-self: start;
@@ -54,7 +54,7 @@
 
 /* ----------------------------empty cart icon style--------------------------- */
 
-.cart-menu__icon {
+.cart-menu-icon {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@
     padding: 0;
 }
 
-.cart-menu__icon img {
+.cart-menu-icon img {
     color: #1D1F22;
     margin-bottom: 1rem;
     width: 50%;
@@ -72,7 +72,7 @@
     padding: 0;
 }
 
-.cart-menu__icon h2 {
+.cart-menu-icon h2 {
     font-style: normal;
     font-family: var(--font-family);
     margin-bottom: 1rem;
@@ -80,14 +80,14 @@
 
 /* ----------------------------cart footer styles--------------------------- */
 
-.cart-menu__total {
+.cart-menu-total {
     font-family: var(--font-family);
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.cart-menu__total p {
+.cart-menu-total p {
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
@@ -96,7 +96,7 @@
 
 /* ----------------------------cart button styles--------------------------- */
 
-.cart-menu__buttons {
+.cart-menu-buttons {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -112,7 +112,7 @@
     transition: 0.3s;
 }
 
-.cart-menu__buttons button {
+.cart-menu-buttons button {
     width: 47%;
     font-weight: 600;
     font-size: 12px;

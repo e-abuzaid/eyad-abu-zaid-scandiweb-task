@@ -7,11 +7,11 @@ export default class Categories extends Component {
 
   render() {
     return (
-      <div className="categories__container">
-        <h1 className="text-primary categories__heading">
+      <div className="categories-container">
+        <h1 className="text-primary categories-heading">
           {this.props.category.charAt(0).toUpperCase() + this.props.category.slice(1)}
         </h1>
-        <div className="categories-products__container">
+        <div className="categories-products-container">
           {this.props.products && this.props.products.map((product, i) => (
             <ProductCard
               product={product}

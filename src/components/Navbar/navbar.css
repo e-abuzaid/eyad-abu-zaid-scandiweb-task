@@ -1,4 +1,4 @@
-.navbar__container {
+.navbar-container {
     padding-left: 5rem;
     padding-right: 5rem;
     background-color: white;
@@ -15,12 +15,12 @@
 
 /* ----------------------------category links styles--------------------------- */
 
-.navbar__category-buttons {
+.navbar-category-buttons {
     display: flex;
     flex-direction: row-reverse;
 }
 
-.navbar__category-button {
+.navbar-category-button {
     background-color: white;
     cursor: pointer;
     border: none;
@@ -34,24 +34,24 @@
     padding-bottom: 2rem;
 }
 
-.navbar__category-button__active {
+.navbar-category-button-active {
     color: var(--primary-color);
     border-bottom: 2px solid var(--primary-color)
 }
 
-.navbar__logo {
+.navbar-logo {
     justify-self: center;
     cursor: pointer;
 }
 
 /* ----------------------------currency and cart buttons styles--------------------------- */
 
-.navbar__utilities {
+.navbar-utilities {
     display: flex;
     align-items: center;
 }
 
-.navbar__utilities-button {
+.navbar-utilities-button {
     margin-left: 1.5rem;
     cursor: pointer;
     display: flex;
@@ -75,19 +75,19 @@
     right: -13px;
 }
 
-.navbar__utilities-button p {
+.navbar-utilities-button p {
     font-size: 1.5rem;
     font-weight: 600;
     margin-right: 7px;
 }
 
-.navbar__utilities-button:last-of-type img  {
+.navbar-utilities-button:last-of-type img  {
     width: 25px;
 }
 
 /* ----------------------------currency menu styles--------------------------- */
 
-.navbar__currency-menu__container {
+.navbar-currency-menu-container {
     position: absolute;
     right: 60px;
     top: 100px;
@@ -99,7 +99,7 @@
     background-color: white;
 }
 
-.navbar__currency-menu__container ul {
+.navbar-currency-menu-container ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@
     padding: 15px 0 15px 0;
 }
 
-.navbar__currency-menu__container ul li {
+.navbar-currency-menu-container ul li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -123,7 +123,7 @@
     padding-right: 30px;
 }
 
-.navbar__currency-menu__container ul li:hover {
+.navbar-currency-menu-container ul li:hover {
     background-color: #EEEEEE;
 }
 
@@ -139,12 +139,12 @@
 }
 
 @media screen and (max-width: 600px) {
-    .navbar__container {
+    .navbar-container {
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    .navbar__category-button {
+    .navbar-category-button {
         font-size: 16px;
         padding-left: 0.5rem;
         padding-right: 0.5rem;

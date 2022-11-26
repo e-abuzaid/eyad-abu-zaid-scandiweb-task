@@ -87,9 +87,9 @@ export default class ProductDetails extends Component {
 
   render() {
     return (
-      <div className="productdetails__container">
-        <div className="productdetails__images-container">
-          <div className="productdetails__images-options__container">
+      <div className="productdetails-container">
+        <div className="productdetails-images-container">
+          <div className="productdetails-images-options-container">
             {this.state.product.gallery && this.state.product.gallery.map((image, i) => (
               <img
                 key={i}
@@ -99,23 +99,23 @@ export default class ProductDetails extends Component {
               />
             ))}
           </div>
-          <div className="productdetails__images-main__container">
+          <div className="productdetails-images-main-container">
             <img 
               src={this.state.image}
               alt="main-product"
             />
           </div>
         </div>
-        <div className="productdetails__info-container">
+        <div className="productdetails-info-container">
           <h1 className="text-primary product-brand">{this.state.product.brand}</h1>
           <h2 className="text-primary product-name">{this.state.product.name}</h2>
           <div>
             {this.state.product.attributes && this.state.product.attributes.map((attribute, i) => (
-              <div className="productdetails__info-attribute__container" key={i}>
+              <div className="productdetails-info-attribute-container" key={i}>
               <h3>
                 {attribute.name.toUpperCase()}:
               </h3>
-              <div className="productdetails__info-attribute-options">
+              <div className="productdetails-info-attribute-options">
               { attribute.items.map((item, i) => (
                 attribute.type === "text" 
                 ? 

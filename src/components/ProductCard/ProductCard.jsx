@@ -40,7 +40,7 @@ export default class ProductCard extends Component {
     return (
           <Link 
             to={`/${this.props.product.id}`} 
-            className="productcard__contaienr"
+            className="productcard-contaienr"
           >
           <img
               src={this.props.product.gallery[0]}
@@ -54,14 +54,14 @@ export default class ProductCard extends Component {
           <h3 className="text-primary">
           {this.state.price.currency.symbol}{this.state.price.amount} 
           </h3>
-          <div className="productcard__cart-icon" onClick={(e) => this.handleAdd(e)}>
+          <div className="productcard-cart-icon" onClick={(e) => this.handleAdd(e)}>
             <img
               src={carticonwhite}
               alt="cart"
             />
           </div>
           {!this.props.product.inStock && 
-              <div className="productcard__outofstock">
+              <div className="productcard-outofstock">
                   <h2 className="text-primary">OUT OF STOCK</h2>
               </div>
           }

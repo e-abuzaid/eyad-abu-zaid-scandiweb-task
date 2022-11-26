@@ -5,7 +5,7 @@ import './modal.css'
 export default class Modal extends Component {
   render() {
     return (
-      <div className="cart-menu__container modal">
+      <div className="cart-menu-container modal">
         <div className="modal-container">
             <div className="modal-top">
                 <p className="text-primary">

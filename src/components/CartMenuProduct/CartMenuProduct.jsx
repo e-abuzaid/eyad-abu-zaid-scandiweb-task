@@ -27,9 +27,9 @@ export default class CartMenuProduct extends Component {
   render() {
             
     return (
-        <div className="cart-product__container">
-            <div className="cart-product__right">
-                <div className="cart-product__actions">
+        <div className="cart-product-container">
+            <div className="cart-product-right">
+                <div className="cart-product-actions">
                     <button className="button-cart" onClick={() => this.props.addToCart(this.props.product)}>
                         <img
                             className="cart-action-icon"
@@ -55,14 +55,14 @@ export default class CartMenuProduct extends Component {
                     />
                 </div>
             </div>
-            <div className="cart-product__left">
+            <div className="cart-product-left">
                 <h2 className="text-primary">{this.props.product.brand}</h2>
                 <h2 className="text-primary">{this.props.product.name}</h2>
                 <h4 className="text-primary">{this.state.price.currency.symbol}{(this.state.price.amount * this.props.product.count).toFixed(2)}</h4>
                 {this.props.product.attributes && this.props.product.attributes.map((attribute, i) => (
-                    <div className="cart-product__attribute-container" key={i}>
+                    <div className="cart-product-attribute-container" key={i}>
                         <h3>{attribute.name.toUpperCase()}:</h3>
-                        <div className="productdetails__info-attribute-options">
+                        <div className="productdetails-info-attribute-options">
                         {attribute.items.map((item, i) => (
                         attribute.type === "text" 
                         ? 

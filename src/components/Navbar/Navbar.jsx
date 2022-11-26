@@ -25,12 +25,12 @@ export default class Navbar extends Component {
 
   render() {
     return (
-      <div className="navbar__container">
-        <div className="navbar__category-buttons">
+      <div className="navbar-container">
+        <div className="navbar-category-buttons">
             {this.props.state.categories.map((category, i) => (
                 <button
                     key={i}
-                    className={`navbar__category-button ${category.name === this.props.state.category && "navbar__category-button__active"}`}
+                    className={`navbar-category-button ${category.name === this.props.state.category && "navbar-category-button-active"}`}
                     value={category.name}
                     onClick={(e) => this.handleClick(e)}
                 >
@@ -38,7 +38,7 @@ export default class Navbar extends Component {
                 </button>
             ))}
         </div>
-        <div className="navbar__logo">
+        <div className="navbar-logo">
             <Link to="/">
                 <img
                     src={logo}
@@ -46,8 +46,8 @@ export default class Navbar extends Component {
                 />
             </Link>
         </div>
-        <div className="navbar__utilities">
-            <div className="navbar__utilities-button" onClick={this.handleCurrencyClick}>
+        <div className="navbar-utilities">
+            <div className="navbar-utilities-button" onClick={this.handleCurrencyClick}>
                 <p>
                     {this.props.state.currency.symbol}
                 </p>
@@ -63,14 +63,14 @@ export default class Navbar extends Component {
                     />
                 }
             </div>
-            <div className="navbar__utilities-button" onClick={this.props.toggleCart}>
+            <div className="navbar-utilities-button" onClick={this.props.toggleCart}>
                 <img
                     src={cart}
                     alt="cart"
                 />
-                {this.props.count > 0 && 
+                {this.props.state.cart.count > 0 && 
                 <div className="cart-count">
-                    {this.props.count}
+                    {this.props.state.cart.count}
                 </div>
                 }
             </div>
@@ -80,7 +80,7 @@ export default class Navbar extends Component {
             ...prevState,
             showCurrencies: false
         }))}}>
-            <div className="navbar__currency-menu__container modal">
+            <div className="navbar-currency-menu-container modal">
                 <ul>
                     {this.props.state.currencies.map((currency, i) => (
                         <li

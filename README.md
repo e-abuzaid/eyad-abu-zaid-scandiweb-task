@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+# Eyad Abu-Zaid Scandiweb React Developer Test
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Description
+
+This is my implementation of the test store app 
+
+## Tools Used
+
+Javascript, React (Class Components), Vanilla CSS for styling 
+
+## Packages
+
+- tilework/opus
+- html-react-parser
+- react-router-dom
+
+I refrained from using state management libraries like Redux, even though it makes the code more redundant,
+because  I wanted to keep 3rd party tools to an absolute minimum,
+using only what's absolutely necessary. And passed the state manually to the components that require them.
+
+## Development
+
+Also, some nested JavaScript nested loops are implemented. However, these are limited to the cases when looping over
+currencies or product attributes, where array items shouldn't normally exceed 5 items, so the code is basically executed
+in linear time (O(n)) rather than square time (O(n)^2)
+
+## File and Folder Structure
+
+Inside the source folder, there are 4 main directories:
+
+- api: it contains the queries that fetch data from the graphql API
+- assets: containing the SVGs for all the icons used throughout the project
+- pages: containing the code and styles of the 3 main views: Categories Page (PLP), Product Page (PDP) and Cart Page
+- components: containing the smaller components that build the main pages; like Navbar, Product Card etc..
+- all the general utility functions are defined inside App.js and passed throughout components as props
+
+
+## Naming Convention
+
+- Class Names: hyphen-separated names are used throughout the project
+- variables and Functions: camelCase convention is used throughout the project
+
 
 ## Available Scripts
 
@@ -38,33 +79,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

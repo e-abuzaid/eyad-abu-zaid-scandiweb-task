@@ -65,8 +65,7 @@ export default class App extends Component {
       ))
   }
 
-  // ---------------------------------------Utility Functions----------------------------------------------
-
+  // ---------------------------------------Utility Functions----------------------------------------------  
   updateCategory = (name) => {
     this.setState(prevState => ({
       ...prevState,
@@ -109,7 +108,7 @@ closeModal = () => {
   }))
 }
 
-//------------------------------------------------------------------------------------------------
+// -------------------------Check if product with exact same selected attributes is selected--------------------------------
   compareObjects = (obj1, obj2) => {
     if (!obj1.options && !obj2.options) {
       return true
@@ -245,7 +244,6 @@ closeModal = () => {
         <div>
           <Navbar
              state={this.state}
-             count={this.state.cart.count}
              toggleCart={this.toggleCart} 
              updateCategory={this.updateCategory} 
              updateCurrency={this.updateCurrency} 

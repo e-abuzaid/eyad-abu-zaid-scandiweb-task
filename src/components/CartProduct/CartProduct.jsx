@@ -45,8 +45,8 @@ export default class CartProduct extends Component {
     
   render() {
     return (
-        <div className="cartpage-item__container">
-        <div className="cartpage-item__left">
+        <div className="cartpage-item-container">
+        <div className="cartpage-item-left">
           <h1 className="text-primary product-brand">{this.props.product.brand}</h1>
           <h2 className="text-primary product-name">{this.props.product.name}</h2>
           <h3 className="text-primary product-price">{this.props.currency.symbol}{(this.props.product.prices.find(
@@ -55,11 +55,11 @@ export default class CartProduct extends Component {
             ).amount * this.props.product.count).toFixed(2)}</h3>
             <div>
               {this.props.product.attributes && this.props.product.attributes.map((attribute, i) => (
-                <div className="productdetails__info-attribute__container" key={i}>
+                <div className="productdetails-info-attribute-container" key={i}>
                 <h3 className="product-attribute-label">
                   {attribute.name.toUpperCase()}:
                 </h3>
-                <div className="productdetails__info-attribute-options cartpage-options">
+                <div className="productdetails-info-attribute-options cartpage-options">
                 { attribute.items.map((item, i) => (
                   attribute.type === "text" 
                   ? 
@@ -86,9 +86,9 @@ export default class CartProduct extends Component {
 
             </div>
         </div>
-        <div className="cartpage-item__right">
-          <div className="cartpage-images__container">
-            <div className="cartbage-item__actions">
+        <div className="cartpage-item-right">
+          <div className="cartpage-images-container">
+            <div className="cartbage-item-actions">
                 <button className="option-text-cart button-cart" onClick={() => this.props.addToCart(this.props.product)}>
                   <img
                     src={plus}
@@ -110,7 +110,7 @@ export default class CartProduct extends Component {
               alt="product-main"
             />
             {this.props.product.gallery.length > 1 && (
-              <div className="cartpage-images__actions">
+              <div className="cartpage-images-actions">
                 <button onClick={() => this.handleImage(this.props.product ,'prev')}>
                   <img
                     src={left}
