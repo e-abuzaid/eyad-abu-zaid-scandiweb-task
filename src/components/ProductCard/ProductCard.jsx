@@ -42,12 +42,13 @@ export default class ProductCard extends Component {
             to={`/${this.props.product.id}`} 
             className="productcard-contaienr"
           >
-          <img
-              src={this.props.product.gallery[0]}
-              alt="product"
-              width="365"
-              height="338"
-              />
+          <div className="productcard-image-container">
+            <img
+                src={this.props.product.gallery.length > 0 && this.props.product.gallery[0]}
+                alt="product"
+                height="338"
+                />
+          </div>
           <h4 className="text-primary">
             {this.props.product.brand} {this.props.product.name}
           </h4>

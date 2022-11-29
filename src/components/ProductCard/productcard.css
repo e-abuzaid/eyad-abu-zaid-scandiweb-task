@@ -9,8 +9,10 @@
     position: relative;
 }
 
-.productcard-contaienr > img {
+.productcard-image-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
