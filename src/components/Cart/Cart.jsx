@@ -40,11 +40,11 @@ export default class Cart extends Component {
                         <p>{this.props.currency.symbol}{this.props.cart.total && this.props.cart.total.toFixed(2)}</p>
                     </div>
                     <div className="cart-menu-buttons">
-                        <button className="button-secondary" onClick={this.props.toggleCart}>
-                            <Link to="/cart">
+                        <Link to="/cart">
+                            <button className="button-secondary" onClick={this.props.toggleCart}>
                                 VIEW BAG
-                            </Link>
-                        </button>
+                            </button>
+                        </Link>
                         <button className="button-primary" onClick={() => {localStorage.removeItem('cart'); window.location.reload()}}>
                             CHECK OUT
                         </button>

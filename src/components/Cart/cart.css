@@ -103,11 +103,21 @@
     margin-top: 20px;
 }
 
-.button-secondary a {
-    color: var(--secondary-color);
+.cart-menu-buttons .button-primary {
+    width: 47%;
 }
 
-.button-secondary:hover a {
+.cart-menu-buttons a {
+    width: 47%;
+}
+
+.cart-menu-buttons a .button-secondary {
+    color: var(--secondary-color);
+    width: 100%;
+    height: 100%;
+}
+
+.cart-menu-buttons a:hover .button-secondary {
     color: white;
     transition: 0.3s;
 }
@@ -117,3 +127,4 @@
     font-weight: 600;
     font-size: 12px;
 }
+

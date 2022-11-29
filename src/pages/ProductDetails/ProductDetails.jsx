@@ -71,10 +71,9 @@ export default class ProductDetails extends Component {
   componentDidUpdate(prevProps, prevState) {
     if(prevProps.currency !== this.props.currency) {
       if (this.state.product.prices) {
-
         this.setState({
           ...prevState,
-          price:  this.props.product.prices.find(
+          price: this.state.product.prices.find(
             (price) => 
               price.currency.label===this.props.currency.label
             )
@@ -82,7 +81,6 @@ export default class ProductDetails extends Component {
       }
     }
 }
-
 
 
   render() {
