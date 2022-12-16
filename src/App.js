@@ -31,13 +31,14 @@ export default class App extends Component {
       show: false,
       message: ''
     },
-    currencies: []
+    currencies: [],
   }
 
   // ---------------------------------------API Calls----------------------------------------------
   fetchNavbarItems = () => {
     fetchCategories()
     .then((res) => this.setState({...this.state, categories: res.categories}))
+    .catch((error) => console.log(error.message))
   }
   //------------------------------------------------------------------------------------------------
   fetchProducts = () => {
@@ -51,6 +52,7 @@ export default class App extends Component {
           products: res.category.products
         }))
         ))
+        .catch((error) => console.log(error.message))
       } 
   //------------------------------------------------------------------------------------------------
   fetchCurrencies = () => {
@@ -63,7 +65,8 @@ export default class App extends Component {
           }
         ))
       ))
-  }
+      .catch((error) => console.log(error.message))
+    }
 
   // ---------------------------------------Utility Functions----------------------------------------------  
   updateCategory = (name) => {

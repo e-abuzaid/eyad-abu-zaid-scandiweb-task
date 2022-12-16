@@ -32,6 +32,7 @@ export default class ProductDetails extends Component {
           })
         )
       ))
+      .catch((error) => console.log(error.message))
   }
 
 // -----------------------------------Logic for selecting attribute------------------------------------------

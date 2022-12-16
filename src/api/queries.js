@@ -13,6 +13,7 @@ export const fetchCategories = async () => {
   let result
   await client.post(categoriesQuery)
     .then((res) => (result = res))
+    .catch((err) => (console.log(err.message)))
   return result
 }
 
@@ -41,6 +42,7 @@ export const fetchCategory = async (category) => {
   let result
   await client.post(categoryQuery)
     .then((res) => (result = res))
+    .catch((err) => (console.log(err.message)))
   return result
 }
 
@@ -68,6 +70,7 @@ export const fetchProduct = async (id) => {
   let result
   await client.post(productQuery)
     .then((res) => (result = res))
+    .catch((err) => (console.log(err.message)))
   return result  
 }
 
@@ -83,6 +86,8 @@ export const fetchCurrency = async () => {
   let result
   await client.post(currencyQuery)
     .then((res) => result = res)
+    .catch((err) => (console.log(err.message)))
+
   return result
 }
  
